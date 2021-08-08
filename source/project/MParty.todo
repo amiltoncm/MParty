@@ -1,0 +1,6 @@
+{TODO 1 -oAmilton -cfrmMovCaixa : Ver retorno de dinheiro}
+{TODO 1 -oAmilton -cfrmMovCaixa : Ver fechamento de caixa}
+{TODO 1 -oAmilton -cuDaoCaixaTot : Criar procedimento para atualizar saldo fechamento - sem alterar o campo fechamento}
+{TODO -oAmilton -cEstrutura : Consulta produtos vendidos (Totalização)}
+{TODO -oAmilton -cProcuras : Fazer tela de busca de Locais}
+{TODO -oAmilton -cProcuras : Fazer tela de busca de Caixas}

@@ -1,0 +1,356 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{96DBE6D3-9EA7-4CCC-A6D0-E356F0462439}</ProjectGuid>
+			<MainSource>MParty.dpr</MainSource>
+			<Base>True</Base>
+			<Config Condition="'$(Config)'==''">Release</Config>
+			<TargetedPlatforms>1</TargetedPlatforms>
+			<AppType>Application</AppType>
+			<FrameworkType>VCL</FrameworkType>
+			<ProjectVersion>13.4</ProjectVersion>
+			<Platform Condition="'$(Platform)'==''">Win32</Platform>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+			<Base_Win64>true</Base_Win64>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+			<Base_Win32>true</Base_Win32>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+			<Cfg_1_Win32>true</Cfg_1_Win32>
+			<CfgParent>Cfg_1</CfgParent>
+			<Cfg_1>true</Cfg_1>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+			<Cfg_2_Win32>true</Cfg_2_Win32>
+			<CfgParent>Cfg_2</CfgParent>
+			<Cfg_2>true</Cfg_2>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_UsePackage>vcl;rtl;vclx;indy;inet;xmlrtl;vclie;inetdbbde;inetdbxpress;dbrtl;dsnap;dsnapcon;vcldb;soaprtl;VclSmp;dbexpress;dbxcds;bdertl;vcldbx;webdsnap;websnap;adortl;ibxpress;visualclx;visualdbclx;vclactnband;vclshlctrls;IntrawebDB_50_70;Intraweb_50_70;Rave50CLX;Rave50VCL;fc4000v7;ip4000clientvcl7;ip4000v7;TeeUI77;Tee77;TeeDB77;TeeLanguage77;TeePro77;TeeGL77;TeeQR77;TeeImage77;dss;rbDBDE97;rbBDE97;rbRCL97;rbDAD97;rbDB97;rbADO97;rbDBE97;rbIBE97;rbIDE97;rbPDF97;rbCIDE97;rbRIDE97;rbRAP97;XDevice7;XFormat7;ALIASED70;amarun70;AppControlsD7;CiaTrayIcon70;Encrypt70;Extenso70;JustOne70;rc70;RxCtl7;RxBDE7;RxDB7;SMImportD7;CoolTrayIcon_D7plus;UrlLabel70;dclrrci7;XPMenu70;JvStdCtrlsD7R;JvAppFrmD7R;JvCoreD7R;JvBandsD7R;JvBDED7R;JvDBD7R;JvDlgsD7R;JvCmpD7R;JvCryptD7R;JvCtrlsD7R;JvCustomD7R;JvDockingD7R;JvDotNetCtrlsD7R;JvEDID7R;JvHMID7R;JvInspectorD7R;JvJansD7R;JvManagedThreadsD7R;JvMMD7R;JvNetD7R;JvPageCompsD7R;JvPluginD7R;JvPrintPreviewD7R;JvSystemD7R;JvTimeFrameworkD7R;JvUIBD7R;JvValidatorsD7R;JvWizardD7R;JvXPCtrlsD7R;SqlDir70;ACBrDiversos;ACBrComum;ACBrTCP;synapse;ACBr_Boleto;ACBr_SPED;ACBr_TEFD;inetdb;qrpt;gbCob7;DJcl;JvGlobusD7R;JvInterpreterD7R;ACBr_NFe;PCN;ACBrCapicom;ACBrNFeDanfeRV;Tiss;dclOffice2k;ip4000word2000vcl7;$(DCC_UsePackage)</DCC_UsePackage>
+			<DCC_UNSAFE_CAST>true</DCC_UNSAFE_CAST>
+			<DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+			<DCC_UNSAFE_TYPE>true</DCC_UNSAFE_TYPE>
+			<DCC_UNSAFE_CODE>true</DCC_UNSAFE_CODE>
+			<VerInfo_Keys>CompanyName=Next Sistemas de Informação;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0</VerInfo_Keys>
+			<DCC_K>false</DCC_K>
+			<DCC_N>true</DCC_N>
+			<DCC_S>false</DCC_S>
+			<DCC_F>false</DCC_F>
+			<DCC_SymbolReferenceInfo>1</DCC_SymbolReferenceInfo>
+			<VerInfo_Locale>1046</VerInfo_Locale>
+			<DCC_E>false</DCC_E>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base_Win64)'!=''">
+			<Icon_MainIcon>NSA_Icon.ico</Icon_MainIcon>
+			<Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base_Win32)'!=''">
+			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+			<Icon_MainIcon>..\..\project\NSA_Icon.ico</Icon_MainIcon>
+			<DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+			<Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+			<VerInfo_Locale>1033</VerInfo_Locale>
+			<VerInfo_Build>1</VerInfo_Build>
+			<Icon_MainIcon>..\..\bin\m32.ico</Icon_MainIcon>
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.1;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=MParty;ProductVersion=1.0.0.1;Comments=</VerInfo_Keys>
+			<DCC_ExeOutput>D:\Documentos\OneDrive\MParty\bin\release\</DCC_ExeOutput>
+			<DCC_DcuOutput>C:\MParty\dcus\release\</DCC_DcuOutput>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+			<DCC_Optimize>false</DCC_Optimize>
+			<DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+			<Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+			<DCC_ExeOutput>D:\Documentos\OneDrive\MParty\bin\debug\</DCC_ExeOutput>
+			<DCC_DcuOutput>C:\MParty\dcus\debug\</DCC_DcuOutput>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="$(MainSource)">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="..\view\estrutura\uPrincipal.pas">
+				<Form>frmPrincipal</Form>
+			</DCCReference>
+			<DCCReference Include="..\templates\uTmpForm.pas">
+				<Form>frmTmpForm</Form>
+			</DCCReference>
+			<DCCReference Include="..\Templates\uTmpFormNormal.pas">
+				<Form>frmTmpFormNormal</Form>
+			</DCCReference>
+			<DCCReference Include="..\Templates\uTmpFormNormalMov.pas">
+				<Form>frmTmpFormNormalMov</Form>
+			</DCCReference>
+			<DCCReference Include="..\templates\uTmpFormMDI.pas">
+				<Form>frmTmpFormMDI</Form>
+			</DCCReference>
+			<DCCReference Include="..\Var\uVarGlobal.pas"/>
+			<DCCReference Include="..\Funcoes\uFuncoesDB.pas"/>
+			<DCCReference Include="..\Funcoes\uFuncoesFormatacao.pas"/>
+			<DCCReference Include="..\Funcoes\uFuncoesMail.pas"/>
+			<DCCReference Include="..\Funcoes\uFuncoesMath.pas"/>
+			<DCCReference Include="..\Funcoes\uFuncoesSeguranca.pas"/>
+			<DCCReference Include="..\Funcoes\uFuncoesSistema.pas"/>
+			<DCCReference Include="..\Funcoes\uFuncoesString.pas"/>
+			<DCCReference Include="..\Funcoes\uFuncoesValidacao.pas"/>
+			<DCCReference Include="..\funcoes\uFuncoesLogs.pas"/>
+			<DCCReference Include="..\Dao\uDaoUsuarios.pas"/>
+			<DCCReference Include="..\Dados\dataTmpConexao.pas">
+				<Form>dmTmpConexao</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\dados\dataCadastros.pas">
+				<Form>dmCadastros</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\view\mensagens\uErConexao.pas">
+				<Form>frmErConexao</Form>
+			</DCCReference>
+			<DCCReference Include="..\view\estrutura\uSenha.pas">
+				<Form>frmSenha</Form>
+			</DCCReference>
+			<DCCReference Include="..\view\mensagens\uSobre.pas">
+				<Form>frmSobre</Form>
+			</DCCReference>
+			<DCCReference Include="..\view\mensagens\uSplash.pas">
+				<Form>frmSplash</Form>
+			</DCCReference>
+			<DCCReference Include="..\view\uteis\uSql.pas">
+				<Form>frmSQL</Form>
+			</DCCReference>
+			<DCCReference Include="..\Dados\dataGestao.pas">
+				<Form>dmGestao</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\view\uteis\uTecladoVirtual.pas">
+				<Form>frmTecladoVirtual</Form>
+			</DCCReference>
+			<DCCReference Include="..\Dados\dataConfig.pas">
+				<Form>dmConfig</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\Dados\dataConsultas.pas">
+				<Form>dmConsultas</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\Templates\uTmpCadastro.pas">
+				<Form>frmTmpCadastro</Form>
+			</DCCReference>
+			<DCCReference Include="..\Templates\uTmpCadastroComp.pas">
+				<Form>frmTmpCadastroComp</Form>
+			</DCCReference>
+			<DCCReference Include="..\Templates\uTmpConsultaMDI.pas">
+				<Form>frmTmpConsultaMDI</Form>
+			</DCCReference>
+			<DCCReference Include="..\Templates\uTmpConsultaNormal.pas">
+				<Form>frmTmpConsultaNormal</Form>
+			</DCCReference>
+			<DCCReference Include="..\Templates\uTmpProcura.pas">
+				<Form>frmTmpProcura</Form>
+			</DCCReference>
+			<DCCReference Include="..\Templates\uTmpRelFormNormal.pas">
+				<Form>frmTmpRelFormNormal</Form>
+			</DCCReference>
+			<DCCReference Include="..\Templates\uTmpRelFormNormalDefault.pas">
+				<Form>frmTmpRelFormNormalDefault</Form>
+			</DCCReference>
+			<DCCReference Include="..\dados\dataLookups.pas">
+				<Form>dmLookups</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\view\cadastros\uCadUsuarios.pas">
+				<Form>frmCadUsuarios</Form>
+			</DCCReference>
+			<DCCReference Include="..\dao\uDaoCaixas.pas"/>
+			<DCCReference Include="..\dao\uDaoFestas.pas"/>
+			<DCCReference Include="..\dao\uDaoCaixatot.pas"/>
+			<DCCReference Include="..\dao\uDaoLocais.pas"/>
+			<DCCReference Include="..\dao\uDaoPrecos.pas"/>
+			<DCCReference Include="..\view\cadastros\uNovaFesta.pas">
+				<Form>frmNovaFesta</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="..\funcoes\uFuncoesDatas.pas"/>
+			<DCCReference Include="..\view\estrutura\uFesta.pas">
+				<Form>frmFesta</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="..\view\cadastros\uTabPrecos.pas">
+				<Form>frmTabPrecos</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="..\view\cadastros\uCadCaixas.pas">
+				<Form>frmCadCaixas</Form>
+			</DCCReference>
+			<DCCReference Include="..\view\cadastros\uCadLocais.pas">
+				<Form>frmCadLocais</Form>
+			</DCCReference>
+			<DCCReference Include="..\view\movimentacoes\uNovoCaixa.pas">
+				<Form>frmNovoCaixa</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="..\dao\uDaoMovHist.pas"/>
+			<DCCReference Include="..\view\movimentacoes\uMovCaixa.pas">
+				<Form>frmMovCaixa</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="..\view\estrutura\uFechamento.pas">
+				<Form>frmFechamento</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="..\view\consultas\uConsCaixaGeral.pas">
+				<Form>frmConsCaixaGeral</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="..\dao\uDaoFestasDatas.pas"/>
+			<DCCReference Include="..\view\relatorios\uRelGeral.pas">
+				<Form>frmRelGeral</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="..\view\relatorios\uRelCaixa.pas">
+				<Form>frmRelCaixa</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="..\view\consultas\uProdutosVendidos.pas">
+				<Form>frmProdutosVendidos</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="..\view\relatorios\uRelProdVend.pas">
+				<Form>frmRelProdVend</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="..\dados\dataTestSGDB.pas">
+				<Form>dmTestSGDB</Form>
+				<FormType>dfm</FormType>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="..\classes\uClassConexao.pas"/>
+			<DCCReference Include="..\view\uteis\uCfgBase.pas">
+				<Form>frmCfgBase</Form>
+			</DCCReference>
+			<DCCReference Include="..\funcoes\uFuncoesMsg.pas"/>
+			<DCCReference Include="..\view\relatorios\uRelTabPrecos.pas">
+				<Form>frmRelTabPrecos</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="..\view\procuras\uProcCaixas.pas">
+				<Form>frmProcCaixas</Form>
+			</DCCReference>
+			<DCCReference Include="..\view\procuras\uProcUsuarios.pas">
+				<Form>frmProcUsuarios</Form>
+			</DCCReference>
+			<DCCReference Include="..\dao\uDaoEstoque.pas"/>
+			<DCCReference Include="..\view\cadastros\uCadEstoque.pas">
+				<Form>frmCadEstoque</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="..\dao\uDaoConsultas.pas"/>
+			<DCCReference Include="..\view\consultas\uDetCaixa.pas">
+				<Form>frmDetCaixa</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="..\view\consultas\uConsEstoque.pas">
+				<Form>frmConsEstoque</Form>
+				<FormType>dfm</FormType>
+			</DCCReference>
+			<DCCReference Include="..\dao\uDaoSistema.pas"/>
+			<DCCReference Include="..\classes\uClassSistema.pas"/>
+			<DCCReference Include="..\funcoes\uFuncoesRegistro.pas"/>
+			<None Include="MParty.todo"/>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">MParty.dpr</Source>
+					</Source>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1046</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName">Next Sistemas de Informação</VersionInfoKeys>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bcboffice2k160.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\bcbofficexp160.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dcloffice2k160.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+				<Platforms>
+					<Platform value="Win64">False</Platform>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+	</Project>

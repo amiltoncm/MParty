@@ -1,0 +1,21 @@
+object frmTmpForm: TfrmTmpForm
+  Left = 266
+  Top = 246
+  Caption = 'frmTmpForm'
+  ClientHeight = 308
+  ClientWidth = 474
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = True
+  Position = poScreenCenter
+  OnActivate = FormActivate
+  OnDestroy = FormDestroy
+  OnKeyPress = FormKeyPress
+  PixelsPerInch = 96
+  TextHeight = 13
+end
